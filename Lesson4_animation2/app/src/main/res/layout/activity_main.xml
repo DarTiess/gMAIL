@@ -16,57 +16,62 @@
         android:scaleType="centerCrop"
         android:src="@drawable/cosmo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="@+id/title"
-        app:layout_constraintRight_toRightOf="@+id/title"
-        android:textSize="12sp"
         android:background="#EE82EE"
-        android:paddingEnd="16dp"
-        android:paddingStart="16dp"
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"
+        android:paddingStart="24dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="8dp"
+        android:text="Hello World!"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toRightOf="@+id/imageBack"
 
-       />
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/title"
+        android:layout_marginTop="48dp"
         android:textSize="45sp"
         android:text="Somethingffffff"
         android:textColor="#C71585"
         app:layout_constraintRight_toLeftOf="@+id/imageBack"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="8dp"
+android:background="#EE82EE"
+        android:paddingEnd="24dp"
+
+        android:paddingStart="24dp"
+
+        android:paddingTop="8dp"/>
 
 
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:id="@+id/viewBack"
-        android:foreground="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/descript"/>
 
 
     <TextView
+        android:id="@+id/tap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tap"
         android:text="infoooooooooooo"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="onButtonClick"/>
+        android:layout_marginBottom="12dp"
+
+        android:layout_marginEnd="8dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="8dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,6 +82,11 @@
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/imageBack"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingStart="8dp"
+        android:textColor="#ffffff"
+        android:paddingEnd="8dp"
+
+        android:paddingBottom="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

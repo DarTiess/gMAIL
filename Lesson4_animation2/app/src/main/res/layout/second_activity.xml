@@ -1,78 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/imageBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/cosmo"
-        app:layout_constraintBottom_toBottomOf="@id/descript"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/imageBack"/>
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/title"
-        android:textSize="45sp"
+android:layout_margin="16dp"
         android:text="Somethingffffff"
         android:textColor="#C71585"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textSize="45sp"
+       app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="8dp"
 
+        android:paddingEnd="24dp"
+
+        android:paddingStart="24dp"
+
+        android:paddingTop="8dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="@+id/title"
-        app:layout_constraintRight_toRightOf="@+id/title"
-        android:textSize="12sp"
         android:background="#EE82EE"
-        android:paddingEnd="16dp"
-        android:paddingStart="16dp"
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp" />
+        android:layout_margin="16dp"
+        android:paddingStart="24dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="8dp"
+        android:text="Hello World!"
+        android:textSize="12sp"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:id="@+id/viewBack"
-        android:foreground="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/descript"
         />
 
 
+
     <TextView
+        android:id="@+id/tap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tap"
         android:text="infoooooooooooo"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"/>
 
     <TextView
+        android:id="@+id/descript"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/descript"
+        android:gravity="center"
         android:text="zdxhnjkl;dfghjkl;xcv bnkml,srdftyughkl.;xdfcvgbnjmkldfg"
         android:textSize="22sp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        android:paddingStart="8dp"
+
+        android:paddingEnd="8dp"
+
+        android:paddingBottom="8dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
