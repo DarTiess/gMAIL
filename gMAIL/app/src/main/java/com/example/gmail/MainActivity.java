@@ -2,6 +2,7 @@ package com.example.gmail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
                 headerView.setText("Для бизнеса");
                 return true;
             case R.id.Enter:
-                headerView.setText("Войти");
+                Intent intent = new Intent(this, EnterActivity.class);
+                startActivity(intent);
                 return true;
             case R.id.CreateNew:
                 headerView.setText("Создать аккаунт");
