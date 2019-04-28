@@ -26,17 +26,18 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id=item.getItemId();
         TextView headerView=(TextView)findViewById(R.id.header);
-
+        Intent intent;
         switch (id){
             case R.id.forBuissness:
                 headerView.setText("Для бизнеса");
                 return true;
             case R.id.Enter:
-                Intent intent = new Intent(this, EnterActivity.class);
+                intent = new Intent(this, EnterActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.CreateNew:
-                headerView.setText("Создать аккаунт");
+                intent = new Intent(this, CreateActivity.class);
+                startActivity(intent);
                 return true;
         }
         return super.onOptionsItemSelected(item);
