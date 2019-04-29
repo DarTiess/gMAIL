@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
         switch (id){
             case R.id.forBuissness:
-                headerView.setText("Для бизнеса");
+                intent = new Intent(this, ForBuissnessActivity.class);
+                startActivity(intent);
                 return true;
             case R.id.Enter:
                 intent = new Intent(this, EnterActivity.class);
