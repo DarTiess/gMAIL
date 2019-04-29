@@ -11,9 +11,10 @@
 
     <style name="gmailTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorWindow</item>
+        <item name="colorPrimary">@color/gmailColor</item>
         <item name="colorPrimaryDark">@color/colorWhite</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="textAppearanceSmallPopupMenu">@drawable/untitled</item>
 
     </style>
     <style name="CustomTheme" parent="Theme.AppCompat.Light">
