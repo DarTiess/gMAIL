@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/container">
+    android:id="@+id/container"
+
+    >
 
 
     <ImageView
@@ -19,9 +21,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-         />
+        />
 
     <TextView
+
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="8dp"
@@ -29,9 +33,11 @@
         android:paddingStart="24dp"
         android:paddingTop="8dp"
         android:textColor="#FFFF"
-        android:background="#EE82EE"
-        android:maxLines="1"
+        android:background="#D8D8D8"
+        android:maxLines="1" android:textAlignment="center"
+        android:text="A long time ago in a galaxy far, far away..."
         android:layout_margin="16dp"
+        android:textSize="20dp"
         android:textColorHint="#b3ffffff"
         android:textCursorDrawable="@null"
         app:layout_constraintBottom_toBottomOf="@+id/title"
@@ -48,10 +54,10 @@
         android:paddingStart="24dp"
         android:paddingTop="8dp"
         android:textColor="#FFFF"
-        android:background="#EE82EE"
+        android:background="#000000"
         android:imeOptions="actionNext"
-        android:inputType="textEmailAddress"
         android:maxLines="1"
+        android:text="Star Wars: The Phantom Menace"
         android:layout_margin="16dp"
         android:textColorHint="#b3ffffff"
         android:textCursorDrawable="@null"
@@ -66,8 +72,8 @@
         android:id="@+id/tap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="infoooooooooooo"
-        android:textSize="15sp"
+        android:text="Get infooooooo"
+        android:textSize="20dp"
         android:layout_marginBottom="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -77,16 +83,21 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/descript"
-        android:text="zdxhnjkl;dfghjkl;xcv bnkml,srdftyughkl.;xdfcvgbnjmkldfg"
-        android:textSize="22sp"
+        android:layout_width="404dp"
+        android:layout_height="128dp"
         android:gravity="center"
-        android:background="#181818"
+        android:text="Turmoil has engulfed the Galactic Republic.
+The taxation of trade routes to outlying star systems is in dispute
+Hoping to resolve the matter with a blocade of deadly battleships,
+the greedy Trade Federation has stopped all shipping to the small planet of Nabоо.
+While the Congress of the Republic endlessly debates this alarming chain of events,
+the Supreme Chancellor has secretly dispatched two Jedi Knights
+the guardians of peace and justice in the galaxy...to settle the conflict."
         android:textColor="#FFFF"
+        android:textSize="22sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageBack"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageBack" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
